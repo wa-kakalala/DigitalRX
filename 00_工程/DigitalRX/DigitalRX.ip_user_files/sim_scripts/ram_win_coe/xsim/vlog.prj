@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../DigitalRX.gen/sources_1/ip/ram_win_coe/sim/ram_win_coe.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

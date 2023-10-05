@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../DigitalRX.gen/sources_1/ip/win_multipiler/sim/win_multipiler.vhd" \
+
+nosort

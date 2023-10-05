@@ -19,7 +19,7 @@ module psd_overlap #(
     input   [DATA_WIDTH-1:0]    data_q_in          ,
     input                       data_in_valid      ,
     
-    input   [3:0]               frame_len          ,
+    input   [4:0]               frame_len          ,
     input                       frame_len_valid    , 
     input   [OVERLAP_WIDTH-1:0] overlap_len        ,
     input                       overlap_len_valid  ,
@@ -43,7 +43,7 @@ always @ (posedge clk_in or negedge rst_n ) begin
        config_frame_len <= FRAME_LEN_DEFAULT -1;
     end 
     else if( frame_len_valid ) begin
-       config_frame_len <= (16'b1<<( frame_len + 1'b1)) -1;
+       config_frame_len <= ( 16'b1<< frame_len  ) -1;
     end else begin
        config_frame_len <= config_frame_len;
     end
@@ -64,7 +64,7 @@ end
 // ¼ÆÊý
 always @ (posedge clk_in or negedge rst_n ) begin
      if( ! rst_n ) begin
-        frame_counter <= {FRAME_WIDTH{1'b0}};
+        frame_counter <= {FRAME_WIDTH{1'b1}};
      end 
      else if( data_in_valid ) begin
         if( frame_counter == config_frame_len ) begin
@@ -78,7 +78,7 @@ always @ (posedge clk_in or negedge rst_n ) begin
      end
 end
 
-assign data_out_last  = ( frame_counter == config_frame_len )?1'b1 : 1'b0;
+assign data_out_last  = ( frame_counter == config_frame_len &&  data_in_valid)?1'b1 : 1'b0;
 assign data_i_out     = data_i_in;
 assign data_q_out     = data_q_in;
 assign data_out_valid = data_in_valid;

@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Sep 27 03:18:36 2023
-# Process ID: 17136
+# Start of session at: Thu Sep 28 01:39:03 2023
+# Process ID: 26620
 # Current directory: E:/FPGA/DigitalRX/DigitalRX.runs/synth_1
-# Command line: vivado.exe -log psd_overlap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source psd_overlap.tcl
-# Log file: E:/FPGA/DigitalRX/DigitalRX.runs/synth_1/psd_overlap.vds
+# Command line: vivado.exe -log psd_addwin.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source psd_addwin.tcl
+# Log file: E:/FPGA/DigitalRX/DigitalRX.runs/synth_1/psd_addwin.vds
 # Journal file: E:/FPGA/DigitalRX/DigitalRX.runs/synth_1\vivado.jou
 # Running On: DESKTOP-7S7UGPP, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16984 MB
 #-----------------------------------------------------------
-source psd_overlap.tcl -notrace
+source psd_addwin.tcl -notrace

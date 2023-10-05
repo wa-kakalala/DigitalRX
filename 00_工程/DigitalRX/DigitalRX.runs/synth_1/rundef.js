@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log psd_overlap.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source psd_overlap.tcl" );
+         "-log psd_addwin.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source psd_addwin.tcl" );
 
 
 

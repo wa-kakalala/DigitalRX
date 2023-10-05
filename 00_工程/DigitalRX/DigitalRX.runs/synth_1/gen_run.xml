@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1695755914" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/psd_overlap.dcp">
-  <File Type="PA-TCL" Name="psd_overlap.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="psd_overlap_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="psd_overlap_reports.tcl"/>
-  <File Type="RDS-RDS" Name="psd_overlap.vds"/>
-  <File Type="RDS-UTIL" Name="psd_overlap_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="psd_overlap_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="psd_overlap.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="psd_overlap_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="psd_overlap_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1695836340" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/psd_overlap.dcp">
+  <File Type="PA-TCL" Name="psd_addwin.tcl"/>
+  <File Type="REPORTS-TCL" Name="psd_addwin_reports.tcl"/>
+  <File Type="RDS-RDS" Name="psd_addwin.vds"/>
+  <File Type="RDS-DCP" Name="psd_addwin.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/psd_overlap.v">
+    <File Path="$PSRCDIR/sources_1/new/psd_addwin.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/psd_overlap.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/coe/win_coe.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="psd_overlap"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="psd_addwin"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -48,4 +56,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="win_multipiler"/>
 </GenRun>

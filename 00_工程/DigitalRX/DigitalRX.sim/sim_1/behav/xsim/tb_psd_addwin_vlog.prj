@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DigitalRX.gen/sources_1/ip/ram_win_coe/sim/ram_win_coe.v" \
+"../../../../DigitalRX.srcs/sources_1/new/psd_addwin.v" \
+"../../../../DigitalRX.srcs/sim_1/new/tb_psd_addwin.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

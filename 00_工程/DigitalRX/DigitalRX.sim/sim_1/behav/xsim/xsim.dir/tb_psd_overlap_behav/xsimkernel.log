@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_psd_overlap_behav/xsimk.exe -simmode gui -wdb tb_psd_overlap_behav.wdb -simrunnum 0 -socket 56760
+Running: xsim.dir/tb_psd_overlap_behav/xsimk.exe -simmode gui -wdb tb_psd_overlap_behav.wdb -simrunnum 0 -socket 62506
 Design successfully loaded
-Design Loading Memory Usage: 7456 KB (Peak: 7456 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading Memory Usage: 7476 KB (Peak: 7476 KB)
+Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 8604 KB (Peak: 8604 KB)
+Simulation Memory Usage: 7992 KB (Peak: 7992 KB)
 Simulation CPU Usage: 15 ms

@@ -14,7 +14,7 @@ reg   [15:0]    data_i_in           ;
 reg   [15:0]    data_q_in           ;
 reg             data_in_valid       ;
 
-reg   [3:0 ]    frame_len           ;
+reg   [4:0 ]    frame_len           ;
 reg             frame_len_valid     ;
 
 wire   [15:0]    data_i_out         ;
@@ -43,11 +43,11 @@ psd_overlap psd_overlap_inst (
 
 initial  begin
     rst_n            = 1'b0     ;
-    clk_in           = 1'b0     ;
+    clk_in           = 1'b1     ;
     data_i_in        = 16'b0    ;
     data_q_in        = 16'b0    ;
     data_in_valid    = 1'b0     ;
-    frame_len        = 4'b0     ;
+    frame_len        = 5'b0     ;
     frame_len_valid  = 1'b0     ;
     
     forever  #5 clk_in  = ~clk_in;
@@ -57,7 +57,7 @@ integer i  ;
 initial begin
     #20 rst_n = 1'b1;
     
-    #10 frame_len = 3; frame_len_valid = 1'b1;  // 2^4 = 16 µã
+    #10 frame_len = 5'd4; frame_len_valid = 1'b1;  // 2^4 = 16 µã
     #10 frame_len_valid = 1'b0;
     
     for( i = 0;i<1024;i=i+1) begin

@@ -1,2 +1,4 @@
 Time resolution is 1 ps
-$stop called at time : 30620 ns : File "E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_overlap.v" Line 80
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_psd_addwin.ram_win_coe_inst.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.

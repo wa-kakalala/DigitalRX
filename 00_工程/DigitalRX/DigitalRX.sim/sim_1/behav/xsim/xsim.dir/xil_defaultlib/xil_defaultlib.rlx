@@ -2,6 +2,10 @@
 2020.2
 Apr 18 2022
 16:05:34
+E:/FPGA/DigitalRX/DigitalRX.gen/sources_1/ip/ram_win_coe/sim/ram_win_coe.v,1695830448,verilog,,E:/FPGA/DigitalRX/DigitalRX.srcs/sources_1/new/psd_addwin.v,,ram_win_coe,,,,,,,,
+E:/FPGA/DigitalRX/DigitalRX.gen/sources_1/ip/win_multipiler/sim/win_multipiler.vhd,1695820344,vhdl,,,,win_multipiler,,,,,,,,
 E:/FPGA/DigitalRX/DigitalRX.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
-E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_overlap.v,1695742839,verilog,,,,tb_psd_overlap,,,,,,,,
-E:/FPGA/DigitalRX/DigitalRX.srcs/sources_1/new/psd_overlap.v,1695743261,verilog,,E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_overlap.v,,psd_overlap,,,,,,,,
+E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_addwin.v,1695837591,verilog,,,,tb_psd_addwin,,,,,,,,
+E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_overlap.v,1695880982,verilog,,,,tb_psd_overlap,,,,,,,,
+E:/FPGA/DigitalRX/DigitalRX.srcs/sources_1/new/psd_addwin.v,1695837098,verilog,,E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_addwin.v,,psd_addwin,,,,,,,,
+E:/FPGA/DigitalRX/DigitalRX.srcs/sources_1/new/psd_overlap.v,1695881202,verilog,,E:/FPGA/DigitalRX/DigitalRX.srcs/sim_1/new/tb_psd_overlap.v,,psd_overlap,,,,,,,,

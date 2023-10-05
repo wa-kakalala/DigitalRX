@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../DigitalRX.gen/sources_1/ip/xfft/sim/xfft.vhd" \
+
+nosort

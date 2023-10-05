@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 28 00:00:50 2023
+# Process ID: 17140
+# Current directory: E:/FPGA/DigitalRX/DigitalRX.runs/ram_win_coe_synth_1
+# Command line: vivado.exe -log ram_win_coe.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ram_win_coe.tcl
+# Log file: E:/FPGA/DigitalRX/DigitalRX.runs/ram_win_coe_synth_1/ram_win_coe.vds
+# Journal file: E:/FPGA/DigitalRX/DigitalRX.runs/ram_win_coe_synth_1\vivado.jou
+# Running On: DESKTOP-7S7UGPP, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16984 MB
+#-----------------------------------------------------------
+source ram_win_coe.tcl -notrace
